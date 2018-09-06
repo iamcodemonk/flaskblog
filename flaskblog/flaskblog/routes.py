@@ -17,6 +17,7 @@ def about():
     return render_template('about.html', title='About')
 
 
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if current_user.is_authenticated:
